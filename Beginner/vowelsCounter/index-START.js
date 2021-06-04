@@ -4,10 +4,23 @@ e.g vowelsCounter('anehizxcv') // will return 3
 */
 
 
-function vowelsCounter(text) {
-    // Code goes here
-}
+// function vowelsCounter(text) {
 
+//     const vowels = ['a', 'e', 'i', 'o', 'u']
+//     let counter = 0
+
+//     for(let char of text.toLowerCase()) {
+//         vowels.includes(char) ? counter++ : null
+//     }
+
+//     return counter
+// }
+
+function vowelsCounter(text) {
+
+    return text.match(/[aeiou]/ig).length
+
+}
 
 
 module.exports = vowelsCounter;
